@@ -80,7 +80,7 @@ var isPrintingAvailable = function(callback) {
     };
 
     var callbackName = 'navigator.printer.callbackMap.' + key;
-    cordova.exec(callback, callback, "PrintPlugin", "isPrintingAvailable");
+    cordova.exec(callback, callback, "PrintPlugin", "isPrintingAvailable", []);
 };
 
 navigator.printer.print = print;
